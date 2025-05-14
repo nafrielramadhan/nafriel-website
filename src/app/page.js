@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
       <nav>
         <div className="name">
-          <a href="/">NafrielRamadhan.</a>
+          <Link href="/">NafrielRamadhan.</Link>
         </div>
         <div className="navbar-button">
-          <a href="/about">ABOUT</a>
-          <a href="/work">WORK</a>
-          <a href="/contact">CONTACT</a>
+          <Link href="/about">ABOUT</Link>
+          <Link href="/work">WORK</Link>
+          <Link href="/contact">CONTACT</Link>
         </div>
       </nav>
 
@@ -16,7 +18,7 @@ export default function Home() {
         <main>
           <div className="description ">
             <h1>
-              I'm a <gradient-text>Creative </gradient-text> &{" "}
+              I&apos;m a <gradient-text>Creative </gradient-text> &{" "}
               <gradient-text>Tech </gradient-text> Enthusiast with a strong
               passion for Education.
             </h1>
@@ -36,13 +38,13 @@ export default function Home() {
             <div></div>
 
             <div>
-              <a
+              <Link
                 href="https://maps.app.goo.gl/h7ezd21ZPicK1YJ5A"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Jakarta, Indonesia
-              </a>
+              </Link>
             </div>
 
             <div>

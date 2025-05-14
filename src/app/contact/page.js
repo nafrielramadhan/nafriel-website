@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 export default function ContactPage() {
   return (
     <>
       <nav>
         <div className="name">
-          Contact <a href="/">NafrielRamadhan.</a>
+          Contact <Link href="/">NafrielRamadhan.</Link>
         </div>
         <div className="navbar-button">
-          <a href="/about">ABOUT</a>
-          <a href="/work">WORK</a>
-          <a href="/contact">CONTACT</a>
+          <Link href="/about">ABOUT</Link>
+          <Link href="/work">WORK</Link>
+          <Link href="/contact">CONTACT</Link>
         </div>
       </nav>
 
