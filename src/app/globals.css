@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "helvetica-bold";
+  src: url("/fonts/Helvetica-Bold.ttf");
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 26px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  display: flex;
+}
+
+.name {
+  font-size: 25px;
+}
+
+nav {
+  margin: 26px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: -1px;
+  color: whitesmoke;
+  line-height: 1;
+}
+
+.navbar-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-weight: normal;
+}
+
+.description {
+  font-family: helvetica-bold, sans-serif;
+  font-size: 95px;
+  letter-spacing: -6px;
+  line-height: 1;
+}
+
+.information {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  line-height: 1;
+}
+
+h3 {
+  padding-bottom: 1px;
+}
+
+gradient-text {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.progress {
+  font-family: helvetica-bold;
+  font-size: 100px;
+  letter-spacing: -6px;
+}
+
+gradient-underline {
+  padding-bottom: 0px;
+  position: relative;
+  text-decoration: none;
+}
+
+gradient-underline::after {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4.5px;
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.gradient-circle {
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  position: relative;
+  bottom: 100px;
+  left: 1100px;
+  opacity: 0.42;
+  filter: blur(90px);
+  background-color: hsl(156, 65%, 38%);
+}
+
+.progress {
+  font-family: helvetica-bold;
+  font-size: 100px;
+  letter-spacing: -6px;
+  line-height: 0.85; /* Tambahan jika ingin rapat */
+}
+
+gradient-underline {
+  padding-bottom: 0px;
+  position: relative;
+  text-decoration: none;
+}
+
+gradient-underline::after {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4.5px;
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.gradient-circle {
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  position: relative;
+  bottom: 100px;
+  left: 1100px;
+  opacity: 0.42;
+  filter: blur(90px);
+  background-color: hsl(156, 65%, 38%);
 }
